@@ -53,6 +53,7 @@ async def on_member_remove(member):
         color = discord.Color.red(),
         timestamp = datetime.utcnow()
     )
+    em.set_footer(text=f"© 2022 | Internet Treffpunkt | Alle Rechte vorbehalten!")
     await bot.get_channel(1036820950580219917).send(embed=em)
 
 
@@ -64,6 +65,7 @@ async def on_member_join(member):
         color = discord.Color.green(),
         timestamp = datetime.utcnow()
     )
+    em.set_footer(text=f"© 2022 | Internet Treffpunkt | Alle Rechte vorbehalten!")
     await bot.get_channel(1036820950580219917).send(embed=em)
 ############################################################################################################
 @bot.event
@@ -74,6 +76,7 @@ async def on_guild_delete(channel):
         color = discord.Color.red(),
         timestamp = datetime.utcnow()
     )
+    em.set_footer(text=f"© 2022 | Internet Treffpunkt | Alle Rechte vorbehalten!")
     await bot.get_channel(1036820950580219919).send(embed=em)
 
 
@@ -85,6 +88,7 @@ async def on_guild_create(channel):
         color = discord.Color.green(),
         timestamp = datetime.utcnow()
     )
+    em.set_footer(text=f"© 2022 | Internet Treffpunkt | Alle Rechte vorbehalten!")
     await bot.get_channel(1036820950580219919).send(embed=em)
 ############################################################################################################
 #@bot.event
@@ -126,6 +130,7 @@ async def on_message_edit(before, after):
             color = discord.Color.blue(),
             timestamp = datetime.utcnow()
         )
+        em.set_footer(text=f"© 2022 | Internet Treffpunkt | Alle Rechte vorbehalten!")
         await bot.get_channel(1036820950580219918).send(embed=em)
 
 
@@ -141,6 +146,7 @@ async def on_message_delete(message):
         color = discord.Color.red(),
         timestamp = datetime.utcnow()
     )
+    em.set_footer(text=f"© 2022 | Internet Treffpunkt | Alle Rechte vorbehalten!")
     em.add_field(name="Nachricht", value=message.content, inline=False)
     await bot.get_channel(1036820950580219918).send(embed=em)
 ############################################################################################################
