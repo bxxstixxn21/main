@@ -14,18 +14,15 @@ class Willkommen(commands.Cog):
         await member.add_roles(role)
         embed = discord.Embed(
             title="Willkommen!",
-            color=discord.Color.random(),
+            color=discord.Color.random()
 
     )
-        embed.add_field(name="** **",
-                        value=f"Willkommen {member.mention} auf Internet Treffpunkt", inline=False)
-        embed.add_field(name="** **",
-                        value="Bitte schau in <#1031204438737682536>", inline=False)
-        embed.add_field(name="** ** ",
-                        value=" Du kannst dich Verifizieren brauchst du aber nicht du kannst auch den Server so nutzen", inline=False)
-        embed.add_field(name="** **",
-                        value="Wir wünschen dir viel Spaß auf dem Server", inline=False)
-        embed.set_thumbnail(url=member.avatar.url)
+        embed.add_field(name="Willkommen auf dem Internet Treffpunkt", value="Wir wünschen dir viel Spaß auf unserem Server", inline=False)
+        embed.add_field(name="Regeln", value="Bitte lies dir die Regeln durch, bevor du dich auf dem Server bewegst", inline=False)
+        embed.add_field(name="** **", value="** **", inline=False)
+        embed.add_field(name="Support", value="Falls du Hilfe brauchst, kannst du dich gerne an einen Moderator wenden", inline=False)
+        embed.add_field(name="** **", value="** **", inline=False)
+        embed.add_field(name="Verifizierung", value="Du hast momentan den Rang ''Besucher'', damit kannst du dich auf dem Server umschauen, aber bitte verifiziere dich", inline=False)
         embed.set_footer(text=f"© 2022 | Internet Treffpunkt | Alle Rechte vorbehalten!")
         embed.set_image(url="https://cdn.discordapp.com/attachments/1038640114773020756/1045492838755999835/willkommen.png")
         channel = await self.bot.fetch_channel(1036820949850394700)
